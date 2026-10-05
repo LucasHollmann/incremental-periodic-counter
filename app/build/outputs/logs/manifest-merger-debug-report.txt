@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Projetos\incremental-periodic-counter\app\src\main\AndroidManifest.xml:2:1-17:12
-INJECTED from C:\Projetos\incremental-periodic-counter\app\src\main\AndroidManifest.xml:2:1-17:12
-INJECTED from C:\Projetos\incremental-periodic-counter\app\src\main\AndroidManifest.xml:2:1-17:12
-INJECTED from C:\Projetos\incremental-periodic-counter\app\src\main\AndroidManifest.xml:2:1-17:12
+ADDED from C:\Projetos\incremental-periodic-counter\app\src\main\AndroidManifest.xml:2:1-33:12
+INJECTED from C:\Projetos\incremental-periodic-counter\app\src\main\AndroidManifest.xml:2:1-33:12
+INJECTED from C:\Projetos\incremental-periodic-counter\app\src\main\AndroidManifest.xml:2:1-33:12
+INJECTED from C:\Projetos\incremental-periodic-counter\app\src\main\AndroidManifest.xml:2:1-33:12
 MERGED from [androidx.compose.material3:material3-android:1.4.0] C:\Users\Kenshi\.gradle\caches\8.10.2\transforms\83ad29e04077f3ab9e461fc0bd2a332c\transformed\material3\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.compose.material:material-android:1.9.3] C:\Users\Kenshi\.gradle\caches\8.10.2\transforms\8ddcea4205e70ed158e6871d58e21f21\transformed\material\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.compose.animation:animation-core-android:1.9.3] C:\Users\Kenshi\.gradle\caches\8.10.2\transforms\a693578be13ba70590f02521a6c963b3\transformed\animation-core\AndroidManifest.xml:2:1-7:12
@@ -19,6 +19,8 @@ MERGED from [androidx.compose.ui:ui-util-android:1.9.3] C:\Users\Kenshi\.gradle\
 MERGED from [androidx.compose.ui:ui-text-android:1.9.3] C:\Users\Kenshi\.gradle\caches\8.10.2\transforms\28b06e39a0aa31cb0a21434cb97c3d7a\transformed\ui-text\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.compose.ui:ui-tooling-preview-android:1.9.3] C:\Users\Kenshi\.gradle\caches\8.10.2\transforms\72bd09894cf91fe75cbc78100f5d3248\transformed\ui-tooling-preview\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.compose.ui:ui-tooling-android:1.9.3] C:\Users\Kenshi\.gradle\caches\8.10.2\transforms\f89b8377b71e19747e1727803fe579b1\transformed\ui-tooling\AndroidManifest.xml:17:1-28:12
+MERGED from [androidx.compose.material:material-icons-extended-android:1.7.8] C:\Users\Kenshi\.gradle\caches\8.10.2\transforms\b0d0d6b19602adad92de8af8683f910c\transformed\material-icons-extended-release\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.material:material-icons-core-android:1.7.8] C:\Users\Kenshi\.gradle\caches\8.10.2\transforms\d4d30b55d2cee33a7c383ea4b4e8d1a8\transformed\material-icons-core-release\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.compose.ui:ui-android:1.9.3] C:\Users\Kenshi\.gradle\caches\8.10.2\transforms\cd536c8deeca424a0286bf2f7a305a28\transformed\ui-release\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.activity:activity:1.10.1] C:\Users\Kenshi\.gradle\caches\8.10.2\transforms\5a04cf044cc0e3bce0b6bec479e7cde3\transformed\activity-1.10.1\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.activity:activity-ktx:1.10.1] C:\Users\Kenshi\.gradle\caches\8.10.2\transforms\9cdc1217ba4b5a84c29798575466c2b7\transformed\activity-ktx-1.10.1\AndroidManifest.xml:2:1-7:12
@@ -63,9 +65,21 @@ MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\Kenshi\.gradle\c
 		INJECTED from C:\Projetos\incremental-periodic-counter\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Projetos\incremental-periodic-counter\app\src\main\AndroidManifest.xml:2:11-69
+uses-permission#android.permission.POST_NOTIFICATIONS
+ADDED from C:\Projetos\incremental-periodic-counter\app\src\main\AndroidManifest.xml:3:5-77
+	android:name
+		ADDED from C:\Projetos\incremental-periodic-counter\app\src\main\AndroidManifest.xml:3:22-74
+uses-permission#android.permission.RECEIVE_BOOT_COMPLETED
+ADDED from C:\Projetos\incremental-periodic-counter\app\src\main\AndroidManifest.xml:4:5-81
+	android:name
+		ADDED from C:\Projetos\incremental-periodic-counter\app\src\main\AndroidManifest.xml:4:22-78
+uses-permission#android.permission.SCHEDULE_EXACT_ALARM
+ADDED from C:\Projetos\incremental-periodic-counter\app\src\main\AndroidManifest.xml:5:5-79
+	android:name
+		ADDED from C:\Projetos\incremental-periodic-counter\app\src\main\AndroidManifest.xml:5:22-76
 application
-ADDED from C:\Projetos\incremental-periodic-counter\app\src\main\AndroidManifest.xml:3:5-16:19
-INJECTED from C:\Projetos\incremental-periodic-counter\app\src\main\AndroidManifest.xml:3:5-16:19
+ADDED from C:\Projetos\incremental-periodic-counter\app\src\main\AndroidManifest.xml:6:5-32:19
+INJECTED from C:\Projetos\incremental-periodic-counter\app\src\main\AndroidManifest.xml:6:5-32:19
 MERGED from [androidx.compose.ui:ui-tooling-android:1.9.3] C:\Users\Kenshi\.gradle\caches\8.10.2\transforms\f89b8377b71e19747e1727803fe579b1\transformed\ui-tooling\AndroidManifest.xml:22:5-26:19
 MERGED from [androidx.compose.ui:ui-tooling-android:1.9.3] C:\Users\Kenshi\.gradle\caches\8.10.2\transforms\f89b8377b71e19747e1727803fe579b1\transformed\ui-tooling\AndroidManifest.xml:22:5-26:19
 MERGED from [androidx.room:room-runtime:2.6.1] C:\Users\Kenshi\.gradle\caches\8.10.2\transforms\412056b4f4d85a64f83bb3e89e4b6867\transformed\room-runtime-2.6.1\AndroidManifest.xml:23:5-29:19
@@ -87,29 +101,59 @@ MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\Kenshi\.gradle\cac
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.15.0] C:\Users\Kenshi\.gradle\caches\8.10.2\transforms\802cd26e24d601674a64504cd6f07f1b\transformed\core-1.15.0\AndroidManifest.xml:28:18-86
 	android:supportsRtl
-		ADDED from C:\Projetos\incremental-periodic-counter\app\src\main\AndroidManifest.xml:6:9-35
+		ADDED from C:\Projetos\incremental-periodic-counter\app\src\main\AndroidManifest.xml:9:9-35
 	android:label
-		ADDED from C:\Projetos\incremental-periodic-counter\app\src\main\AndroidManifest.xml:5:9-41
+		ADDED from C:\Projetos\incremental-periodic-counter\app\src\main\AndroidManifest.xml:8:9-41
 	android:allowBackup
-		ADDED from C:\Projetos\incremental-periodic-counter\app\src\main\AndroidManifest.xml:4:9-35
+		ADDED from C:\Projetos\incremental-periodic-counter\app\src\main\AndroidManifest.xml:7:9-35
 	android:theme
-		ADDED from C:\Projetos\incremental-periodic-counter\app\src\main\AndroidManifest.xml:7:9-72
+		ADDED from C:\Projetos\incremental-periodic-counter\app\src\main\AndroidManifest.xml:10:9-40
 activity#com.lucashollmann.incrementalperiodiccounter.MainActivity
-ADDED from C:\Projetos\incremental-periodic-counter\app\src\main\AndroidManifest.xml:8:9-15:20
+ADDED from C:\Projetos\incremental-periodic-counter\app\src\main\AndroidManifest.xml:11:9-18:20
 	android:exported
-		ADDED from C:\Projetos\incremental-periodic-counter\app\src\main\AndroidManifest.xml:10:13-36
+		ADDED from C:\Projetos\incremental-periodic-counter\app\src\main\AndroidManifest.xml:13:13-36
 	android:name
-		ADDED from C:\Projetos\incremental-periodic-counter\app\src\main\AndroidManifest.xml:9:13-41
+		ADDED from C:\Projetos\incremental-periodic-counter\app\src\main\AndroidManifest.xml:12:13-41
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Projetos\incremental-periodic-counter\app\src\main\AndroidManifest.xml:11:13-14:29
+ADDED from C:\Projetos\incremental-periodic-counter\app\src\main\AndroidManifest.xml:14:13-17:29
 action#android.intent.action.MAIN
-ADDED from C:\Projetos\incremental-periodic-counter\app\src\main\AndroidManifest.xml:12:17-69
+ADDED from C:\Projetos\incremental-periodic-counter\app\src\main\AndroidManifest.xml:15:17-69
 	android:name
-		ADDED from C:\Projetos\incremental-periodic-counter\app\src\main\AndroidManifest.xml:12:25-66
+		ADDED from C:\Projetos\incremental-periodic-counter\app\src\main\AndroidManifest.xml:15:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Projetos\incremental-periodic-counter\app\src\main\AndroidManifest.xml:13:17-77
+ADDED from C:\Projetos\incremental-periodic-counter\app\src\main\AndroidManifest.xml:16:17-77
 	android:name
-		ADDED from C:\Projetos\incremental-periodic-counter\app\src\main\AndroidManifest.xml:13:27-74
+		ADDED from C:\Projetos\incremental-periodic-counter\app\src\main\AndroidManifest.xml:16:27-74
+receiver#com.lucashollmann.incrementalperiodiccounter.CounterNotificationReceiver
+ADDED from C:\Projetos\incremental-periodic-counter\app\src\main\AndroidManifest.xml:19:9-21:40
+	android:exported
+		ADDED from C:\Projetos\incremental-periodic-counter\app\src\main\AndroidManifest.xml:21:13-37
+	android:name
+		ADDED from C:\Projetos\incremental-periodic-counter\app\src\main\AndroidManifest.xml:20:13-56
+receiver#com.lucashollmann.incrementalperiodiccounter.NotificationBootReceiver
+ADDED from C:\Projetos\incremental-periodic-counter\app\src\main\AndroidManifest.xml:22:9-31:20
+	android:exported
+		ADDED from C:\Projetos\incremental-periodic-counter\app\src\main\AndroidManifest.xml:24:13-36
+	android:name
+		ADDED from C:\Projetos\incremental-periodic-counter\app\src\main\AndroidManifest.xml:23:13-53
+intent-filter#action:name:android.app.action.SCHEDULE_EXACT_ALARM_PERMISSION_STATE_CHANGED+action:name:android.intent.action.BOOT_COMPLETED+action:name:android.intent.action.TIMEZONE_CHANGED+action:name:android.intent.action.TIME_SET
+ADDED from C:\Projetos\incremental-periodic-counter\app\src\main\AndroidManifest.xml:25:13-30:29
+action#android.intent.action.BOOT_COMPLETED
+ADDED from C:\Projetos\incremental-periodic-counter\app\src\main\AndroidManifest.xml:26:17-79
+	android:name
+		ADDED from C:\Projetos\incremental-periodic-counter\app\src\main\AndroidManifest.xml:26:25-76
+action#android.intent.action.TIME_SET
+ADDED from C:\Projetos\incremental-periodic-counter\app\src\main\AndroidManifest.xml:27:17-73
+	android:name
+		ADDED from C:\Projetos\incremental-periodic-counter\app\src\main\AndroidManifest.xml:27:25-70
+action#android.intent.action.TIMEZONE_CHANGED
+ADDED from C:\Projetos\incremental-periodic-counter\app\src\main\AndroidManifest.xml:28:17-81
+	android:name
+		ADDED from C:\Projetos\incremental-periodic-counter\app\src\main\AndroidManifest.xml:28:25-78
+action#android.app.action.SCHEDULE_EXACT_ALARM_PERMISSION_STATE_CHANGED
+ADDED from C:\Projetos\incremental-periodic-counter\app\src\main\AndroidManifest.xml:29:17-107
+	android:name
+		ADDED from C:\Projetos\incremental-periodic-counter\app\src\main\AndroidManifest.xml:29:25-104
 uses-sdk
 INJECTED from C:\Projetos\incremental-periodic-counter\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Projetos\incremental-periodic-counter\app\src\main\AndroidManifest.xml
@@ -144,6 +188,10 @@ MERGED from [androidx.compose.ui:ui-tooling-preview-android:1.9.3] C:\Users\Kens
 MERGED from [androidx.compose.ui:ui-tooling-preview-android:1.9.3] C:\Users\Kenshi\.gradle\caches\8.10.2\transforms\72bd09894cf91fe75cbc78100f5d3248\transformed\ui-tooling-preview\AndroidManifest.xml:20:5-44
 MERGED from [androidx.compose.ui:ui-tooling-android:1.9.3] C:\Users\Kenshi\.gradle\caches\8.10.2\transforms\f89b8377b71e19747e1727803fe579b1\transformed\ui-tooling\AndroidManifest.xml:20:5-44
 MERGED from [androidx.compose.ui:ui-tooling-android:1.9.3] C:\Users\Kenshi\.gradle\caches\8.10.2\transforms\f89b8377b71e19747e1727803fe579b1\transformed\ui-tooling\AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.material:material-icons-extended-android:1.7.8] C:\Users\Kenshi\.gradle\caches\8.10.2\transforms\b0d0d6b19602adad92de8af8683f910c\transformed\material-icons-extended-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.material:material-icons-extended-android:1.7.8] C:\Users\Kenshi\.gradle\caches\8.10.2\transforms\b0d0d6b19602adad92de8af8683f910c\transformed\material-icons-extended-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.material:material-icons-core-android:1.7.8] C:\Users\Kenshi\.gradle\caches\8.10.2\transforms\d4d30b55d2cee33a7c383ea4b4e8d1a8\transformed\material-icons-core-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.material:material-icons-core-android:1.7.8] C:\Users\Kenshi\.gradle\caches\8.10.2\transforms\d4d30b55d2cee33a7c383ea4b4e8d1a8\transformed\material-icons-core-release\AndroidManifest.xml:5:5-44
 MERGED from [androidx.compose.ui:ui-android:1.9.3] C:\Users\Kenshi\.gradle\caches\8.10.2\transforms\cd536c8deeca424a0286bf2f7a305a28\transformed\ui-release\AndroidManifest.xml:5:5-44
 MERGED from [androidx.compose.ui:ui-android:1.9.3] C:\Users\Kenshi\.gradle\caches\8.10.2\transforms\cd536c8deeca424a0286bf2f7a305a28\transformed\ui-release\AndroidManifest.xml:5:5-44
 MERGED from [androidx.activity:activity:1.10.1] C:\Users\Kenshi\.gradle\caches\8.10.2\transforms\5a04cf044cc0e3bce0b6bec479e7cde3\transformed\activity-1.10.1\AndroidManifest.xml:20:5-44

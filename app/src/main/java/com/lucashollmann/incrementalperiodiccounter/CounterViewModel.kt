@@ -4,8 +4,12 @@ import android.app.Application
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.viewModelScope
 import com.lucashollmann.incrementalperiodiccounter.data.Counter
+import com.lucashollmann.incrementalperiodiccounter.data.CounterHistoryEntry
 import com.lucashollmann.incrementalperiodiccounter.data.CounterDatabase
+import com.lucashollmann.incrementalperiodiccounter.data.NotificationSchedule
+import com.lucashollmann.incrementalperiodiccounter.data.NotificationScheduleCodec
 import kotlinx.coroutines.flow.SharingStarted
+import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.stateIn
 import kotlinx.coroutines.launch
 
@@ -35,21 +39,85 @@ class CounterViewModel(application: Application) : AndroidViewModel(application)
         }
     }
 
-    fun incrementCounter(counterId: Long) {
+    fun deleteCounter(counterId: Long) {
         viewModelScope.launch {
-            counterDao.incrementCounter(counterId)
+            CounterNotificationScheduler.cancel(getApplication(), counterId)
+            counterDao.deleteCounter(counterId)
         }
     }
 
-    fun decrementCounter(counterId: Long) {
+    fun observeCounterHistory(counterId: Long): Flow<List<CounterHistoryEntry>> =
+        counterDao.observeHistory(counterId)
+
+    fun rescheduleNotifications() {
         viewModelScope.launch {
-            counterDao.decrementCounter(counterId)
+            counterDao.getAllCounters().forEach {
+                CounterNotificationScheduler.scheduleNext(getApplication(), it)
+            }
         }
     }
 
-    fun resetCounter(counterId: Long) {
+    fun incrementCounter(counterId: Long, increment: Int) {
+        if (increment <= 0) return
+
         viewModelScope.launch {
-            counterDao.resetCounter(counterId)
+            counterDao.changeCounter(counterId, increment.toLong())
+        }
+    }
+
+    fun decrementCounter(counterId: Long, increment: Int) {
+        if (increment <= 0) return
+
+        viewModelScope.launch {
+            counterDao.changeCounter(counterId, -increment.toLong())
+        }
+    }
+
+    fun resetCounter(counterId: Long, clearHistory: Boolean) {
+        viewModelScope.launch {
+            counterDao.resetCounter(counterId, clearHistory)
+        }
+    }
+
+    fun setCounterValue(counterId: Long, value: Int) {
+        viewModelScope.launch {
+            counterDao.setCounterValue(counterId, value)
+        }
+    }
+
+    fun updateCounterSettings(
+        counterId: Long,
+        name: String,
+        normalIncrement: Int,
+        secondaryIncrement: Int?,
+        allowNegative: Boolean,
+        notificationSchedules: List<NotificationSchedule>,
+    ) {
+        val trimmedName = name.trim()
+        if (
+            trimmedName.isEmpty() ||
+            normalIncrement <= 0 ||
+            secondaryIncrement?.let { it <= 0 } == true
+                || notificationSchedules.any {
+                    !it.time.matches(Regex("""([01]\d|2[0-3]):[0-5]\d""")) ||
+                        it.days.any { day -> day !in 1..7 }
+                }
+        ) {
+            return
+        }
+
+        viewModelScope.launch {
+            counterDao.updateCounterSettings(
+                counterId,
+                trimmedName,
+                normalIncrement,
+                secondaryIncrement,
+                allowNegative,
+                NotificationScheduleCodec.encode(notificationSchedules),
+            )
+            counterDao.getCounter(counterId)?.let {
+                CounterNotificationScheduler.scheduleNext(getApplication(), it)
+            }
         }
     }
 }

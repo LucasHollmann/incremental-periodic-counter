@@ -1,3 +1,6 @@
 R_DEF: Internal format may change without notice
 local
+color theme_accent
+color window_background
 string app_name
+style AppTheme

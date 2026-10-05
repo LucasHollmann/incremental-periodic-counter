@@ -23,8 +23,10 @@ color call_notification_answer_color
 color call_notification_decline_color
 color notification_action_color_filter
 color notification_icon_bg_color
+color theme_accent
 color vector_tint_color
 color vector_tint_theme_color
+color window_background
 dimen compat_button_inset_horizontal_material
 dimen compat_button_inset_vertical_material
 dimen compat_button_padding_horizontal_material
@@ -266,6 +268,7 @@ string tab
 string template_percent
 string tooltip_description
 string tooltip_label
+style AppTheme
 style DialogWindowTheme
 style EdgeToEdgeFloatingDialogTheme
 style EdgeToEdgeFloatingDialogWindowTheme
