@@ -65,7 +65,7 @@ class CounterNotificationReceiver : BroadcastReceiver() {
             notificationManager.createNotificationChannel(
                 NotificationChannel(
                     CHANNEL_ID,
-                    "Lembretes dos contadores",
+                    context.getString(R.string.notification_channel_name),
                     NotificationManager.IMPORTANCE_DEFAULT,
                 ),
             )

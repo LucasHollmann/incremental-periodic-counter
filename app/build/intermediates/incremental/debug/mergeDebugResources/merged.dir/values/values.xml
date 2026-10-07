@@ -5,6 +5,7 @@
     <color name="androidx_core_secondary_text_default_material_light">#8a000000</color>
     <color name="call_notification_answer_color">#1d873b</color>
     <color name="call_notification_decline_color">#d93025</color>
+    <color name="ic_launcher_background">#0D0D0F</color>
     <color name="notification_action_color_filter">#ffffffff</color>
     <color name="notification_icon_bg_color">#ff9e9e9e</color>
     <color name="theme_accent">#A5A5AD</color>
@@ -103,7 +104,7 @@
     <integer name="m3c_window_layout_in_display_cutout_mode">1</integer>
     <integer name="status_bar_notification_info_maxnum">999</integer>
     <string name="androidx_startup" translatable="false">androidx.startup</string>
-    <string name="app_name">Contador</string>
+    <string name="app_name">Daily Dose</string>
     <string name="autofill">Autofill</string>
     <string name="call_notification_answer_action">Answer</string>
     <string name="call_notification_answer_video_action">Video</string>
@@ -192,6 +193,7 @@
     <string name="mc2_snackbar_pane_title">Alert</string>
     <string name="navigation_menu">"Navigation menu"</string>
     <string name="not_selected">Not selected</string>
+    <string name="notification_channel_name">Daily Dose reminders</string>
     <string name="range_end">"Range end"</string>
     <string name="range_start">"Range start"</string>
     <string name="selected">Selected</string>

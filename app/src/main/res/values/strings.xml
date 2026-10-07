@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">Contador</string>
+    <string name="app_name">Daily Dose</string>
+    <string name="notification_channel_name">Daily Dose reminders</string>
 </resources>
